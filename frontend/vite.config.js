@@ -15,6 +15,7 @@ export default defineConfig({
   server: {
     host: '0.0.0.0', // Necessary for Docker
     port: 5173,
+    allowedHosts:['letterboxd-review-analyzer-web.onrender.com'],
     proxy: {
       // Proxy API requests to the backend container
       '/api': {
